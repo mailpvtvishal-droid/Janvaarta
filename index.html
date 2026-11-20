@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="जनवार्ता - बिहार, भारत और दुनिया की ताजा खबरें">
+<title>जनवार्ता | Janwaarta - हिंदी न्यूज़</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,"Noto Sans Devanagari",sans-serif;color:#222;background:#f5f5f5}
+header{background:#fff;padding:18px 5%;border-bottom:3px solid #d71920}
+.logo{font-size:36px;font-weight:900;color:#c8101e}
+.tagline{color:#666;font-size:13px;margin-top:4px}
+nav{background:#151515;padding:13px 5%;display:flex;gap:24px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:15px}
+nav a:hover{color:#ff5555}
+.breaking{background:#c8101e;color:white;padding:12px 5%;font-weight:bold}
+.container{max-width:1150px;margin:25px auto;padding:0 15px}
+.section-title{border-left:5px solid #c8101e;padding-left:12px;margin:25px 0 18px;font-size:23px}
+.hero{background:white;border-radius:8px;overflow:hidden;display:grid;grid-template-columns:1.4fr 1fr;gap:20px;padding:18px}
+.hero img{width:100%;height:300px;object-fit:cover;border-radius:6px}
+.hero h1{font-size:27px;line-height:1.5;margin:12px 0}
+.category{color:#c8101e;font-size:13px;font-weight:bold}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border-radius:7px;overflow:hidden;box-shadow:0 2px 8px #00000010}
+.card img{width:100%;height:175px;object-fit:cover}
+.card-content{padding:15px}
+.card h3{font-size:18px;line-height:1.5;margin:8px 0}
+.card p{font-size:13px;color:#666;line-height:1.6}
+.date{font-size:12px;color:#888}
+.search{padding:10px;border:1px solid #ddd;border-radius:5px;width:220px}
+footer{background:#171717;color:#ddd;text-align:center;padding:30px 15px;margin-top:45px}
+footer h2{color:white;margin-bottom:10px}
+@media(max-width:700px){
+.hero{grid-template-columns:1fr}
+.hero img{height:220px}
+.news-grid{grid-template-columns:1fr 1fr}
+nav{gap:15px}
+.logo{font-size:29px}
+}
+@media(max-width:430px){.news-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">जनवार्ता</div>
+<div class="tagline">सच की आवाज़, जनता के साथ</div>
+</header>
+
+<nav>
+<a href="#home">होम</a>
+<a href="#bihar">बिहार</a>
+<a href="#india">देश</a>
+<a href="#world">विदेश</a>
+<a href="#education">शिक्षा</a>
+<a href="#business">व्यापार</a>
+</nav>
+
+<div class="breaking">
+BREAKING NEWS &nbsp; | &nbsp; जनवार्ता पर आपका स्वागत है।
+</div>
+
+<main class="container" id="home">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+<h2 class="section-title">आज की प्रमुख खबरें</h2>
+<input class="search" id="search" placeholder="खबर खोजें..." oninput="searchNews()">
+</div>
+
+<section class="hero">
+<div>
+<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1000" alt="समाचार पत्र">
+<span class="category">जनवार्ता विशेष</span>
+<h1>जनवार्ता में आपका स्वागत है</h1>
+<p>बिहार, देश और दुनिया की खबरें पढ़ें। हमारी कोशिश है कि आपको सही और महत्वपूर्ण जानकारी मिले।</p>
+</div>
+<div>
+<h2 class="section-title">हमारा उद्देश्य</h2>
+<p style="line-height:1.9">जनवार्ता एक स्वतंत्र डिजिटल समाचार मंच के रूप में विकसित किया जा रहा है। यहां स्थानीय समाचार, शिक्षा, राजनीति, समाज और अन्य महत्वपूर्ण विषयों को जगह मिलेगी।</p>
+</div>
+</section>
+
+<h2 class="section-title" id="bihar">बिहार की खबरें</h2>
+<section class="news-grid" id="newsGrid">
+<article class="card">
+<img src="https://images.unsplash.com/photo-1580746738099-7a1c0a2a0f4b?w=700" alt="बिहार">
+<div class="card-content">
+<span class="category">बिहार</span>
+<h3>बिहार की खबरें और स्थानीय अपडेट</h3>
+<p>अपने जिले और राज्य से जुड़ी महत्वपूर्ण खबरों के लिए जनवार्ता से जुड़े रहें।</p>
+<div class="date">जनवार्ता | समाचार</div>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=700" alt="देश">
+<div class="card-content">
+<span class="category">देश</span>
+<h3>देश की प्रमुख खबरें</h3>
+<p>राष्ट्रीय घटनाओं और महत्वपूर्ण विषयों की जानकारी यहां पढ़ें।</p>
+<div class="date">जनवार्ता | समाचार</div>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=700" alt="दुनिया">
+<div class="card-content">
+<span class="category">विदेश</span>
+<h3>दुनिया की महत्वपूर्ण खबरें</h3>
+<p>अंतरराष्ट्रीय घटनाओं और दुनिया के प्रमुख समाचारों पर नजर रखें।</p>
+<div class="date">जनवार्ता | समाचार</div>
+</div>
+</article>
+
+<article class="card" id="education">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700" alt="शिक्षा">
+<div class="card-content">
+<span class="category">शिक्षा</span>
+<h3>शिक्षा और रोजगार अपडेट</h3>
+<p>परीक्षा, परिणाम और रोजगार से जुड़ी जानकारियां।</p>
+<div class="date">जनवार्ता | शिक्षा</div>
+</div>
+</article>
+
+<article class="card" id="business">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700" alt="व्यापार">
+<div class="card-content">
+<span class="category">व्यापार</span>
+<h3>व्यापार और अर्थव्यवस्था</h3>
+<p>बाजार और आर्थिक गतिविधियों से जुड़ी खबरें।</p>
+<div class="date">जनवार्ता | व्यापार</div>
+</div>
+</article>
+</section>
+
+<h2 class="section-title" id="india">देश और समाज</h2>
+<p style="line-height:1.8">जनवार्ता पर विभिन्न क्षेत्रों की खबरें और उपयोगी जानकारियां प्रकाशित की जाएंगी।</p>
+</main>
+
+<footer>
+<h2>जनवार्ता | JANWAARTA</h2>
+<p>सच की आवाज़, जनता के साथ</p>
+<p style="margin-top:15px">© 2026 Janwaarta. All rights reserved.</p>
+</footer>
+
+<script>
+function searchNews(){
+ const query=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('#newsGrid .card').forEach(card=>{
+  card.style.display=card.innerText.toLowerCase().includes(query)?'':'none';
+ });
+}
+</script>
+</body>
+</html>
+
+HTML
